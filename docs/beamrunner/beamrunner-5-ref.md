@@ -20,7 +20,7 @@ Learn about the package contents and pipeline options for IBM® Streams Runner f
 
 The Streams Runner package contains the following folders:
 
-- `com.ibm.streams.beam`: The IBM Streams Runner for Apache Beam toolkit, which you can use to submit Apache Beam  2.1 applications to the IBM Streams runtime environment.
+- `com.ibm.streams.beam`: The IBM Streams Runner for Apache Beam toolkit, which you can use to submit Apache Beam  2.4 applications to the IBM Streams runtime environment.
 
 - `samples`: Toolkit sample applications. For information about the samples, see the README file in the samples folder.
 
@@ -143,7 +143,7 @@ These environment variables are not required for the Streams Runner to work; how
   </table>
 
 ## Apache Beam SDK for Java
-See Beam's [Java API Reference](https://beam.apache.org/documentation/sdks/javadoc/2.1.0/) for information on application APIs.
+See Beam's [Java API Reference](https://beam.apache.org/documentation/sdks/javadoc/2.4.0/) for information on application APIs.
 
 ## Streams Runner SDK API Reference
 See the [javadoc](../beamrunner/release/1.1.0/javadoc/index.html) for more information.

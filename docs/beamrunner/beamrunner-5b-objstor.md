@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  Using the IBM Object Storage OpenStack Swift for Bluemix service with IBM Streams Runner for Apache Beam
+title:  Using the IBM Cloud Object Storage service with IBM Streams Runner for Apache Beam
 navtitle: Using IBM Cloud Object Storage
 description:  You can use the IBM® Streams Runner for Apache Beam `FileStreamSample` sample application to learn how to use IBM Cloud object storage for file input and output.
 weight:  10
@@ -14,17 +14,14 @@ next:
   title: Limitations and known issues
 ---
 
-You can use the IBM® Streams Runner for Apache Beam `FileStreamSample` sample application to learn how to use IBM Cloud (formerly IBM Bluemix) object storage for file input and output.
-
-## **Deprecation**
-IBM Cloud will no longer offer the Object Storage OpenStack Swift service as of March 31, 2018.
+You can use the IBM® Streams Runner for Apache Beam `FileStreamSample` sample application to learn how to use IBM Cloud object storage for file input and output.
 
 ## Before you start
 
 Before you run the Apache Beam 2.1 `FileStreamSample` sample application, you must configure and run the following services on IBM Cloud®:
 
 - Streaming Analytics. For more information, see [Creating a Streaming Analytics service on IBM Cloud](../beamrunner-2-install/#creating-a-streaming-analytics-service-on-bluemix).
-- Object Storage OpenStack Swift for Bluemix.
+- Cloud Object Storage.
    - Create the service if you don't already have one. For more information, see [Creating the Object Storage OpenStack Swift for Bluemix service](../beamrunner-5a-io/#creating-the-object-storage-openstack-swift-for-bluemix-service).
    - Set up credentials for the service. **Remember**: Make sure the environment variables are configured. For more information, see [Set up credentials for the service](../beamrunner-5a-io/#setting-up-credentials-for-the-service).
    - (Optional) Install the Swift CLI client. For more information, see [Configuring the CLI to use Swift and Cloud Foundry commands](https://console.bluemix.net/docs/services/ObjectStorage/os_configuring.html).

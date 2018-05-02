@@ -28,7 +28,7 @@ The goal of the project is to provide easy-to-follow documentation and developme
 
 
 
-### IBM Streams: Streams Runner for Apache Beam (supports Apache Beam 2.1)
+### IBM Streams: Streams Runner for Apache Beam (supports Apache Beam 2.4)
 
 {: .simple}
 * [Introduction to IBM Streams Runner for Apache Beam](docs/beamrunner/beamrunner-1-intro)
@@ -41,7 +41,7 @@ The goal of the project is to provide easy-to-follow documentation and developme
   * [WordCount sample application](docs/beamrunner/beamrunner-3b-wordcount)
 
 * [Input/output options](docs/beamrunner/beamrunner-5a-io)
-  * [Using the IBM Object Stroage OpenStack Swift for Bluemix service](docs/beamrunner/beamrunner-5b-objstor)
+  * [Using the IBM Cloud Object Stroage service](docs/beamrunner/beamrunner-5b-objstor)
 
 * Reference
   * [Package and runner options](docs/beamrunner/beamrunner-5-ref)
