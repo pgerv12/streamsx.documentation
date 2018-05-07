@@ -7,21 +7,21 @@ tags:
       url: "/docs/beamrunner/beamrunner-2-install"
 
     - page: "Using the runner"
-      url: "/docs/beamrunner/beamrunner-2a-using"
+      url: "/docs/beamrunner/beamrunner-3-using"
 
     - page: "Samples"
       subpages: 
         - page: "TemperatureSample sample app"
-          url: "/docs/beamrunner/beamrunner-3-sample"
+          url: "/docs/beamrunner/beamrunner-4-sample"
         - page: "WordCount sample app"
-          url: "/docs/beamrunner/beamrunner-3b-wordcount"
+          url: "/docs/beamrunner/beamrunner-4a-wordcount"
     - page: "Reference"
       subpages:
         - page: "Runner reference"
-          url: "/docs/beamrunner/beamrunner-5-ref"
+          url: "/docs/beamrunner/beamrunner-6-ref"
         - page: "I/O Options"
-          url: "/docs/beamrunner/beamrunner-5a-io"
+          url: "/docs/beamrunner/beamrunner-6a-io"
         - page: "Using IBM Cloud Object Storage"
-          url: "/docs/beamrunner/beamrunner-5b-objstor"
+          url: "/docs/beamrunner/beamrunner-6b-objstor"
     - page: "Limitations and known issues"
-      url: "/docs/beamrunner/beamrunner-6-issues"
+      url: "/docs/beamrunner/beamrunner-7-issues"

@@ -10,7 +10,7 @@ prev:
   file: beamrunner-2-install
   title: Installing
 next:
-  file: beamrunner-3-sample
+  file: beamrunner-4-sample
   title: TemperatureSample app
 ---
 

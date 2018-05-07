@@ -7,10 +7,10 @@ weight:  10
 published: true
 tag: beam
 prev:
-  file: beamrunner-1-intro
-  title: Introduction
+  file: beamrunner-2-install
+  title: Install
 next:
-  file: beamrunner-2a-using
+  file: beamrunner-3-using
   title: Using
 ---
 

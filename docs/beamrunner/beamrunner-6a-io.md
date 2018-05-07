@@ -7,10 +7,10 @@ weight:  10
 published: true
 tag: beam
 prev:
-  file: beamrunner-5-ref
+  file: beamrunner-6-ref
   title: Reference
 next:
-  file: beamrunner-5b-objstor
+  file: beamrunner-6b-objstor
   title: Using IBM Cloud Object Storage
 ---
 

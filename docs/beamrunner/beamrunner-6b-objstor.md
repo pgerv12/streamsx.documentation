@@ -7,10 +7,10 @@ weight:  10
 published: true
 tag: beam
 prev:
-  file: beamrunner-5a-io
+  file: beamrunner-6a-io
   title: I/O options
 next:
-  file: beamrunner-6-issues
+  file: beamrunner-7-issues
   title: Limitations and known issues
 ---
 
