@@ -112,7 +112,7 @@ These environment variables are not required for the Streams Runner to work; how
     <tbody>
       <tr>
         <td>STREAMS_RUNNER_HOME</td>
-        <td>The absolute path to the extraction location of the <code class="highlighter-rouge">com.ibm.streams.beam-1.1.0</code> directory</td>
+        <td>The absolute path to the extraction location of the <code class="highlighter-rouge">com.ibm.streams.beam-1.2.0</code> directory</td>
         <td>Set by using one of the following methods:
         <ul><li>Source the <code class="highlighter-rouge">$STREAMS_RUNNER_HOME/samples/bin/streams-runner-env.sh</code> file.</li>
         <li>Use the  <code class="highlighter-rouge">export</code> command.</li></ul></td>
@@ -146,4 +146,4 @@ These environment variables are not required for the Streams Runner to work; how
 See Beam's [Java API Reference](https://beam.apache.org/documentation/sdks/javadoc/2.4.0/) for information on application APIs.
 
 ## Streams Runner SDK API Reference
-See the [javadoc](../beamrunner/release/1.1.0/javadoc/index.html) for more information.
+See the [javadoc](../beamrunner/release/1.2.0/javadoc/index.html) for more information.

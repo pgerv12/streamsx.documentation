@@ -45,7 +45,7 @@ The goal of the project is to provide easy-to-follow documentation and developme
 
 * Reference
   * [Package and runner options](docs/beamrunner/beamrunner-5-ref)
-  * [Runner-specific SDK API](docs/beamrunner/release/1.1.0/javadoc/)
+  * [Runner-specific SDK API](docs/beamrunner/release/1.2.0/javadoc/)
 
 * [Limitations and known issues](docs/beamrunner/beamrunner-6-issues)
 
