@@ -5,7 +5,7 @@ navtitle: Installing
 description: Installing IBM® Streams Runner for Apache Beam for an on-premise installation of IBM Streams involves extracting the Streams Runner toolkit and configuring environment variables.
 weight:  10
 published: true
-tag: beam
+tag: beam-120
 prev:
   file: beamrunner-2-install
   title: Install

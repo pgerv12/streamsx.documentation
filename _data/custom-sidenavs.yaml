@@ -5,7 +5,11 @@ tags:
 
     - page: "Install"
       url: "/docs/beamrunner/beamrunner-2-install"
-
+      subpages:
+        - page: "From on-premise IBM Streams"
+          url: "/docs/beamrunner/beamrunner-2a-onprem"
+        - page: "From IBM Streaming Analytics service"
+          url: "/docs/beamrunner/beamrunner-2b-sas"
   beam-111:
     - page: "Using the runner"
       url: "/docs/beamrunner/release/1.1.1/using"
