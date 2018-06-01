@@ -5,10 +5,7 @@ navtitle: Reference
 description:  Learn about the IBM® Streams Runner features and changes by release.
 weight:  10
 published: true
-tag: beam-120
-prev:
-  file: reference
-  title: Reference
+tag: beam
 ---
 View the features and changes of the Streams Runner from release to release. Any items marked *Experimental* are subject to change between releases
 

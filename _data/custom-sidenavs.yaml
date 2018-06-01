@@ -10,6 +10,8 @@ tags:
           url: "/docs/beamrunner/beamrunner-2a-onprem"
         - page: "From IBM Streaming Analytics service"
           url: "/docs/beamrunner/beamrunner-2b-sas"
+    - page: "Release notes"
+      url: "/docs/beamrunner/release-notes"
   beam-111:
     - page: "Using the runner"
       url: "/docs/beamrunner/release/1.1.1/using"
