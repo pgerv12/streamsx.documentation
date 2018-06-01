@@ -10,7 +10,7 @@ prev:
   file: beamrunner-2-install
   title: Install
 next:
-  file: beamrunner-3-using
+  file: release/1.2.0/using
   title: Using
 ---
 
