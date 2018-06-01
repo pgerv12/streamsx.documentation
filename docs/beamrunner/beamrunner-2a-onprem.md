@@ -44,9 +44,30 @@ tar -zxvf $STREAMS_INSTALL/etc/beam/com.ibm.streams.beam-1.2.0.tar.gz
     cd com.ibm.streams.beam-1.2.0/samples
     . bin/streams-runner-env.sh
     ```
+1. Set up Streams for use with Streams Runner.
     1. Set the `STREAMS_DOMAIN_ID` and `STREAMS_INSTANCE_ID` environment
     variables to the Streams domain and instance you will be using with the
     Streams Runner.
+    1. Verify the Streams domain and instance are running:
+    ```bash
+    streamtool getinstancestate
+    ```
+    If the `getinstancestate` output includes the error `CDISC5005E` then start the instance:
+    ```bash
+    streamtool startinstance
+    ```
+    If the `getinstancestate` includes the error `CDISA5056E` then start
+    the domain and instance:
+    ```bash
+    streamtool startdomain && streamtool startinstance
+    ```
+    1. Configure your certificates and keystore. The Streams Runner uses
+    the Streams REST API for Beam metrics and job status, and `java` will
+    reject the connection if the certificate is not trusted or does not
+    match the host name. Creating and configuring certificates is beyond
+    the scope of this installation guide; see security documentation for
+    IBM Streams for more information.
+
 
 ## Validating the Streams Runner installation
 
@@ -85,4 +106,3 @@ com.ibm.streams.beam-1.2.0/
 | | - bin/
 | | | - streams-runner-env.sh
 ```
-
