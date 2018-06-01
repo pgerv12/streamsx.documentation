@@ -33,10 +33,10 @@ The goal of the project is to provide easy-to-follow documentation and developme
 {: .simple}
 * [Introduction to IBM Streams Runner for Apache Beam](docs/beamrunner/beamrunner-1-intro)
 * [Installing IBM Streams Runner](docs/beamrunner/beamrunner-2-install)
-  * [Install from IBM Streams installation](docs/beamrunner/beamrunner-2a-onprem) (supports Apache Beam 2.4)
-  * [Install from IBM Streaming Analytics service](docs/beamrunner/beamrunner-2b-sas) (supports Apache Beam 2.1)
-* [Latest release notes](docs/beamrunner/latest/release-notes)
-* [Latest runner options](docs/beamrunner/latest/reference)
+  * [Install from IBM Streams installation](docs/beamrunner/beamrunner-2a-onprem) (v1.2, supports Apache Beam 2.4)
+  * [Install from IBM Streaming Analytics service](docs/beamrunner/beamrunner-2b-sas) (v1.1.1, supports Apache Beam 2.1)
+* Using the IBM Streams Runner [(v1.2)](docs/beamrunner/release/1.2.0/using) [(v1.1.1)](docs/beamrunner/release/1.1.1/using)
+* [Release notes](docs/beamrunner/latest/release-notes)
 
 ### IBM Streams: Scala Support
 

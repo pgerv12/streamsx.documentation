@@ -8,7 +8,7 @@ published: true
 tag: beam-120
 prev:
   file: beamrunner-2-install
-  title: Install
+  title: Installing
 next:
   file: release/1.2.0/using
   title: Using
