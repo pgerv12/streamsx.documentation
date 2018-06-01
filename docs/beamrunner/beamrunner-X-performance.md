@@ -30,7 +30,7 @@ elements.
 The IBM Streams Runner for Apache Beam pipeline options `--bundleSize` and
 `--bundleMillis` control how the runner handles bundles by either directing
 the runner to create bundles of a maximum number of elements, or after a
-maximum time delay, or both.
+maximum time delay, whichever limit is reached first.
 
 For more information on these options, see [Streams Runner pipeline
 options](../beamrunner-6-ref/#streams-runner-pipeline-options).
@@ -58,6 +58,44 @@ named `Serial` that should not be parallelized at all. Using the pipeline
 option `--parallelWidths=4,Serial=1,VeryParallel=8` would disable
 parallelism for `Serial` while using higher parallelism for `VeryParallel`
 than the rest of the application.
+
+`PCollection`s of [`KV`](https://beam.apache.org/documentation/sdks/javadoc/2.4.0/org/apache/beam/sdk/values/KV.html) elements are partitioned based on keys. The same key will always go into
+the same parallel channel, guaranteeing that keyed states are correctly
+handled. `PCollections` of other types are partitioned using the round-robin
+scheme. It is applications' responsibility to balance workloads across keys.
+Skewed workloads can overwhelm hot keys and hamper performance. Since the
+value of keys are determined by applications, the runner cannot easily
+detect or predict keys. If a `PCollection` contains fewer keys than the
+parallel width, some parallel channels will stay idle, wasting system
+resources. One special case is a `PCollection` using the `Void` key. In this
+situation, the runner can identify that there is only one global key and
+run the transform in a non-parallelized form. The following code snippet
+demonstrates an example. As the `AddKey` transform adds the same `Void` key
+to all elements, the downstream `GBK` cannot run in parallel. If a user
+specifies a parallel width (greater than 1) for the entire pipeline, the
+runner may silently ignore the parallel width for the section of the pipeline
+that uses the `Void` keys. If a user explicitly specifies a parallel width
+for the `GBK` in the example, the runner, again, may ignore the specified width.
+
+```java
+Pipeline p = Pipeline.create(options);
+p.apply("Source", GenerateSequence.from(0))
+ .apply("AddKey", WithKeys.of((Void) null))
+ .setCoder(KvCoder.of(VoidCoder.of(), VarLongCoder.of()))
+ .apply("GBK", GroupByKey.create());
+```
+
+For [`Source`](https://beam.apache.org/documentation/sdks/javadoc/2.4.0/org/apache/beam/sdk/io/Source.html)
+transforms, the runner attempts to match the configured parallel width
+by splitting the source into sub-sources using the [`UnboundedSource#split`](https://beam.apache.org/documentation/sdks/javadoc/2.4.0/org/apache/beam/sdk/io/UnboundedSource.html) or [`BoundedSource#split`](https://beam.apache.org/documentation/sdks/javadoc/2.4.0/org/apache/beam/sdk/io/BoundedSource.html) method. Applications need to make sure
+that the source implementation supports `split` properly. If the number
+of sub-sources returned by `split` disagrees with the parallel width, the
+source parallel width is set to the smaller value of the specified width and
+the number of sub-sources. If there are more sub-sources than the specified
+width, the runner will allocate sub-sources to parallel channels in a
+round-robin fashion and one parallel channel can contain multiple
+sub-source instances. To get the best performance, the number of sub-sources
+should match the expected parallel width.
 
 For more information on this option, see [Streams Runner pipeline
 options](../beamrunner-6-ref/#streams-runner-pipeline-options).
