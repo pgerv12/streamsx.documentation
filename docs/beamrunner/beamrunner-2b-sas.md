@@ -16,12 +16,12 @@ next:
 
 Installing IBM® Streams Runner for Apache Beam involves downloading and extracting the Streams Runner toolkit, configuring environment variables, and creating a credentials file for your Streaming Analytics service. You don't need to install IBM Streams to use Streams Runner.
 
-## Before you start: develop your application
-Apache Beam applications can be developed without the Streams Runner being installed. For information about developing your Beam application, see the [Beam SDK for Java](https://beam.apache.org/documentation/sdks/java/).
+## Before you start
+The Streaming Analytics installation of Streams Runner supports Apache Beam 2.1 applications, so your application must use the [version 2.1 Java API](https://beam.apache.org/documentation/sdks/javadoc/2.1.0/)
 
 ## Before you execute
 
-A Red Hat Enterprise Linux 6 or 7 environment is recommended for submitting Apache Beam 2.4 applications to the Streaming Analytics service in IBM Cloud (formerly IBM Bluemix).
+A Red Hat Enterprise Linux 7 environment is recommended for submitting Apache Beam 2.1 applications to the Streaming Analytics service in IBM Cloud (formerly IBM Bluemix).
 
 ## Creating a Streaming Analytics service on IBM Cloud
 
@@ -36,6 +36,8 @@ Before you can download Streams Runner, you must have a Streaming Analytics serv
 3. Use the **Filter** option to search for Streaming Analytics.
 4. Click the **Streaming Analytics** service to configure an instance.
 5. On the catalog page for the Streaming Analytics service, change **Service name** to something meaningful to you, for example, `Streaming Analytics-beam`.
+6. Select a Pricing Plan
+    1. **IMPORTANT**: To obtain the latest Streams Runner version, select a container-based plan like 'Lite' or 'Entry Container Hourly'
 6. Click **Create**. The service page opens and your service starts automatically. The service name appears as the title of the service page.
 
 For more information about the Streaming Analytics service, see [Introduction to the Bluemix Streaming Analytics Service](https://developer.ibm.com/streamsdev/docs/streaming-analytics-now-available-bluemix-2/).
