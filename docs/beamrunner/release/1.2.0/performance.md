@@ -7,11 +7,11 @@ weight:  10
 published: true
 tag: beam-120
 prev:
-  file: monitor
-  title: Monitoring
+  file: objstor
+  title: Using IBM Cloud Object Storage
 next:
-  file: reference
-  title: Reference
+  file: issues
+  title: Limitations and known issues
 ---
 
 The performance of your IBM® Streams Runner for Apache Beam application is
@@ -33,7 +33,7 @@ the runner to create bundles of a maximum number of elements, or after a
 maximum time delay, whichever limit is reached first.
 
 For more information on these options, see [Streams Runner pipeline
-options](../beamrunner-6-ref/#streams-runner-pipeline-options).
+options](../reference/#streams-runner-pipeline-options).
 
 ## Parallelism
 

@@ -5,7 +5,7 @@ navtitle: WordCount sample app
 description:  You can use IBM® Streams Runner for Apache Beam to run the Apache Beam 2.1 Java™ SDK Quickstart WordCount sample application.
 weight:  10
 published: true
-tag: beam
+tag: beam-111
 prev:
   file: sample
   title: TemperatureSample app
@@ -20,10 +20,10 @@ You can use IBM® Streams Runner for Apache Beam to run the Apache Beam 2.1 Java
 
 Before you run the `WordCount` sample application, you must configure and run the following services on IBM Cloud (formerly IBM Bluemix):
 
-- Streaming Analytics. For more information, see [Creating a Streaming Analytics service on IBM Cloud](../beamrunner-2-install/#creating-a-streaming-analytics-service-on-bluemix).
+- Streaming Analytics. For more information, see [Creating a Streaming Analytics service on IBM Cloud](../../beamrunner-2b-sas/#creating-a-streaming-analytics-service-on-bluemix).
 - Object Storage OpenStack Swift for Bluemix.
-   - Create the service if you don't already have one. For more information, see [Creating the Object Storage OpenStack Swift for Bluemix service](../beamrunner-5a-io/#creating-the-object-storage-openstack-swift-for-bluemix-service).
-   - Set up credentials for the service. **Remember**: Make sure the environment variables are configured. For more information, see [Set up credentials for the service](../beamrunner-5a-io/#setting-up-credentials-for-the-service).
+   - Create the service if you don't already have one. For more information, see [Creating the Object Storage OpenStack Swift for Bluemix service](../io/#creating-the-object-storage-openstack-swift-for-bluemix-service).
+   - Set up credentials for the service. **Remember**: Make sure the environment variables are configured. For more information, see [Set up credentials for the service](../io/#setting-up-credentials-for-the-service).
    - (Optional) Install the Swift CLI client. For more information, see [Configuring the CLI to use Swift and Cloud Foundry commands](https://console.bluemix.net/docs/services/ObjectStorage/os_configuring.html).
 
 In addition, you must set up your Java Development Kit (JDK) and Maven environment. For more information, see [Set up your Development Environment](https://beam.apache.org/get-started/quickstart-java/#set-up-your-development-environment).
@@ -49,7 +49,7 @@ In addition, you must set up your Java Development Kit (JDK) and Maven environme
   mvn package
   ```
 
-1. Choose one of the following options to run the WordCount sample application. For more information about the `streams://` and `swift://` storage options, see [Input/output options for IBM Streams Runner for Apache Beam](../beamrunner-5a-io/).
+1. Choose one of the following options to run the WordCount sample application. For more information about the `streams://` and `swift://` storage options, see [Input/output options for IBM Streams Runner for Apache Beam](../io/).
 
     - The following command uses `streams://` to provide the input, and writes the output to object storage.
 

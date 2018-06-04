@@ -21,7 +21,7 @@ The Streaming Analytics installation of Streams Runner supports Apache Beam 2.1 
 
 ## Before you execute
 
-A Red Hat Enterprise Linux 7 environment is recommended for submitting Apache Beam 2.1 applications to the Streaming Analytics service in IBM Cloud (formerly IBM Bluemix).
+A Red Hat Enterprise Linux 7 environment is recommended for submitting Beam applications to the Streaming Analytics service in IBM Cloud (formerly IBM Bluemix).
 
 ## Creating a Streaming Analytics service on IBM Cloud
 
@@ -37,7 +37,7 @@ Before you can download Streams Runner, you must have a Streaming Analytics serv
 4. Click the **Streaming Analytics** service to configure an instance.
 5. On the catalog page for the Streaming Analytics service, change **Service name** to something meaningful to you, for example, `Streaming Analytics-beam`.
 6. Select a Pricing Plan
-    1. **IMPORTANT**: To obtain the latest Streams Runner version, select a container-based plan like 'Lite' or 'Entry Container Hourly'
+    1. **Important**: To obtain the latest Streams Runner version, select a container-based plan like 'Lite' or 'Entry Container Hourly'
 6. Click **Create**. The service page opens and your service starts automatically. The service name appears as the title of the service page.
 
 For more information about the Streaming Analytics service, see [Introduction to the Bluemix Streaming Analytics Service](https://developer.ibm.com/streamsdev/docs/streaming-analytics-now-available-bluemix-2/).
@@ -55,12 +55,12 @@ The following video demonstrates how to download and install the Streams Runner 
     1. Select **Save File**, specify a location if necessary, and click **OK**.
 1. Extract the toolkit by entering the following command where you downloaded the file:
 ```bash
-tar -zxvf com.ibm.streams.beam-1.2.0.tar.gz
+tar -zxvf com.ibm.streams.beam-1.1.1.tar.gz
 ```
 1. (Optional) Configure the environment variables. Although the variables are not required, the documentation refers to them for convenience. If you do not set the environment variables, you must use the full paths when you run the sample applications.
     1. Navigate to the `samples` directory in the expanded toolkit, and set up environment variables for the runner:
     ```bash
-    cd com.ibm.streams.beam-1.2.0/samples
+    cd com.ibm.streams.beam-1.1.1/samples
     . bin/streams-runner-env.sh
     ```
     1. Set the environment variables `VCAP_SERVICES` to point to the VCAP file that contains your Streaming Analytics service credentials and `STREAMING_ANALYTICS_SERVICE_NAME` to the service name within that file. For example: 

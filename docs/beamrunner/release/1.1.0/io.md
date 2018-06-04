@@ -33,7 +33,7 @@ Because the application runs on IBM Cloud, it does not have direct access to loc
 
 For example, `--filesToStage='{"/local/file.txt":"data/input"}'` copies the file `/local/file.txt` to IBM Cloud where the Beam application can reference it as `streams://data/input`.
 
-For more information about the `--filesToStage` option, see [Streams Runner pipeline options](../beamrunner-5-ref/#streams-runner-pipeline-options).
+For more information about the `--filesToStage` option, see [Streams Runner pipeline options](../reference/#streams-runner-pipeline-options).
 
 ## Object storage input/output on IBM Cloud (`swift://`)
 
