@@ -57,10 +57,10 @@ See their respective links for instructions on how to download, install, and dep
 1. Edit the YAML to add a route, change the name, or set the storage type of the Kafka or Zookeeper deployments
     1. Under `.spec.kafka.listeners`, add
 
-    ```yaml
-      external:
-        type: route
-    ```
+       ```yaml
+       external:
+         type: route
+       ```
 
     * The default YAML will create an emphimeral Kafka cluster named 'my-cluster'
     * If you need a persistent cluster, see the [AMQ Streams doc](https://access.redhat.com/documentation/en-us/red_hat_amq/7.6/html-single/using_amq_streams_on_openshift/index#assembly-storage-deployment-configuration-kafka) for more info.
