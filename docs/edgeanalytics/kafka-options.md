@@ -129,7 +129,7 @@ For more information, see [Using streamsx.kafka with Red Hat AMQ Streams](https:
 1. Visit [Event Streams](https://cloud.ibm.com/catalog/services/event-streams) in the catalog.
 1. Select a region (e.g. Dallas, Frankfurt)
 1. Select a plan (e.g. Lite).
-   * **Important**: The Lite plan only allows one topic which may not be enough for some samples to work).
+   * **Important**: The Lite plan only allows one topic which may not be enough for some samples to work.
 1. Enter in a service name (e.g. Event Streams for Edge)
 1. Click 'Create'
 
