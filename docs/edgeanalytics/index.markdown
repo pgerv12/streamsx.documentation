@@ -16,7 +16,7 @@ IBM® Streams can be used to develop and build applications for edge analytics u
 
 For more information about Edge Analytics, see the [IBM Edge Analytics Beta on Cloud Pak for Data](https:// https://www.ibm.com/support/knowledgecenter/SSQNUZ_3.0.1/svc-welcome/edge.html) documentation.
 
-***
+## Getting Started
 
 To get started creating a Streams application for edge analytics, view one or more Streams edge samples:
 
@@ -34,6 +34,6 @@ To get started creating a Streams application for edge analytics, view one or mo
 
 For more information about develop and building edge applications using IBM Streams, see [Moving analytics to the edge with Edge Analytics](https://www.ibm.com/support/knowledgecenter/SSQNUZ_3.0.1/svc-edge/usage.html).
 
-***
+## Transferring data from the edge
 
 One way to communicate data from edge applications to a central cloud platform, service, or application is through a data feed or messaging system like Apache Kafka. See [Apache Kafka options for edge applications](kafka-options) for a list of a few possible Kafka installation options and how to interface with those options in your edge applications using Streams toolkits.
