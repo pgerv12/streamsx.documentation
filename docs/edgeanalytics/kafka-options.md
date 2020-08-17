@@ -159,7 +159,7 @@ Use the copied credentials to save them to a file or create a [Streams applicati
 
 ## Vanilla Apache Kafka
 
-Apache Kafka can be deployed on bare-metal or VM systems as well as Kubernetes, or OpenShift environments. Edge applications can leverage these Kafka installations; however the edge systems where the edge application will be running must be able to connect to the system or environment where Kafka is running. Additionally, any cloud services or applications that consume Kafka topics must be able to access the system or environment.
+Apache Kafka can be deployed on bare-metal or VM systems as well as Kubernetes, or OpenShift environments. Edge applications can leverage these Kafka installations; however, the edge systems where the edge application will be running must be able to connect to the system or environment where Kafka is running. Additionally, any cloud services or applications that consume Kafka topics must be able to access the system or environment.
 
 Because users should already have access to a Kubernetes-like environment, the following install section will cover Helm charts and Operators to deploy Kafka servers.
 

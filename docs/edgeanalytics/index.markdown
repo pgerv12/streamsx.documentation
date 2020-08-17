@@ -14,16 +14,11 @@ next:
 IBM® Streams can be used to develop and build applications for edge analytics using IBM Edge Analytics Beta on Cloud Pak for Data.
 
 
-
 For more information about Edge Analytics, see the [IBM Edge Analytics Beta on Cloud Pak for Data](https:// https://www.ibm.com/support/knowledgecenter/SSQNUZ_3.0.1/svc-welcome/edge.html) documentation.
-
-
-
-For more information about develop and building edge applications using IBM Streams, see [Moving analytics to the edge with Edge Analytics](https://www.ibm.com/support/knowledgecenter/SSQNUZ_3.0.1/svc-edge/usage.html).
 
 ***
 
-To get started, view Streams samples for edge.
+To get started creating a Streams application for edge analytics, view one or more Streams edge samples:
 
 * Python Notebooks
   1. [sample.edge-rolling-average](https://github.com/IBMStreams/sample.edge-rolling-average) - Level: Beginner - Rolling average of stock prices
@@ -36,3 +31,9 @@ To get started, view Streams samples for edge.
 
 * Streams Processing Language (SPL)
   1. [sample.netflow](https://github.com/IBMStreams/sample.netflow) - Level: Advanced, multi-application submission, coordination - Collects network statistics and presents them centrally in a web display.
+
+For more information about develop and building edge applications using IBM Streams, see [Moving analytics to the edge with Edge Analytics](https://www.ibm.com/support/knowledgecenter/SSQNUZ_3.0.1/svc-edge/usage.html).
+
+***
+
+One way to communicate data from edge applications to a central cloud platform, service, or application is through a data feed or messaging system like Apache Kafka. See [Apache Kafka options for edge applications](kafka-options) for a list of a few possible Kafka installation options and how to interface with those options in your edge applications using Streams toolkits.
